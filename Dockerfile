@@ -1,11 +1,11 @@
 # Specify the base image of the first block and tag
-FROM node:alpine as builder
+FROM node:alpine
 
 # Specify working directory
 WORKDIR '/app'
 
 # Install dependencies
-COPY ./package.json ./
+COPY package*.json ./
 RUN npm install
 
 # Copy the contents of working directory
@@ -21,4 +21,4 @@ FROM nginx
 EXPOSE 80
 
 # Copy the static content from previous block to the new block
-COPY --from=builder /app/build /usr/share/nginx/html
+COPY --from=0 /app/build /usr/share/nginx/html
