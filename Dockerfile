@@ -17,5 +17,8 @@ RUN npm run build
 # New block with nginx base image
 FROM nginx
 
+# Expose the port to elasticbeanstalk
+EXPOSE 80
+
 # Copy the static content from previous block to the new block
 COPY --from=builder /app/build /usr/share/nginx/html
