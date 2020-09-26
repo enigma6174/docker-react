@@ -16,6 +16,24 @@ test('renders learn react link', () => {
 
 test('renders learn react link', () => {
   const { getByText } = render(<App />);
+  const linkElement = getByText(/Github/i);
+  expect(linkElement).toBeInTheDocument();
+});
+
+test('renders learn react link', () => {
+  const { getByText } = render(<App />);
+  const linkElement = getByText(/Travis CI/i);
+  expect(linkElement).toBeInTheDocument();
+});
+
+test('renders learn react link', () => {
+  const { getByText } = render(<App />);
+  const linkElement = getByText(/AWS (elasticbeanstalk)/i);
+  expect(linkElement).toBeInTheDocument();
+});
+
+test('renders learn react link', () => {
+  const { getByText } = render(<App />);
   const linkElement = getByText(/enigma6174/i);
   expect(linkElement).toBeInTheDocument();
 });

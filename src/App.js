@@ -10,14 +10,14 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Built With React. Hosted In NGINX. Developed By enigma6174
-        </a>
+        <ul>
+          <li className="App-link">Built With React</li>
+          <li className="App-link">Served By NGINX</li>
+          <li className="App-link">Stored On Github</li>
+          <li className="App-link">CI/CD Through Travis CI</li>
+          <li className="App-link">Deployed On AWS (elasticbeanstalk)</li>
+          <li className="App-link">Developed by enigma6174</li>
+        </ul>
       </header>
     </div>
   );
