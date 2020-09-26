@@ -4,13 +4,13 @@ import App from './App';
 
 test('renders learn react link', () => {
   const { getByText } = render(<App />);
-  const linkElement = getByText(/Hola!/i);
+  const linkElement = getByText(/React/i);
   expect(linkElement).toBeInTheDocument();
 });
 
 test('renders learn react link', () => {
   const { getByText } = render(<App />);
-  const linkElement = getByText(/Created By/i);
+  const linkElement = getByText(/NGINX/i);
   expect(linkElement).toBeInTheDocument();
 });
 
