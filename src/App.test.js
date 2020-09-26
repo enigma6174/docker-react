@@ -22,13 +22,13 @@ test('renders learn react link', () => {
 
 test('renders learn react link', () => {
   const { getByText } = render(<App />);
-  const linkElement = getByText(/Travis CI/i);
+  const linkElement = getByText(/Travis/i);
   expect(linkElement).toBeInTheDocument();
 });
 
 test('renders learn react link', () => {
   const { getByText } = render(<App />);
-  const linkElement = getByText(/AWS (elasticbeanstalk)/i);
+  const linkElement = getByText(/AWS/i);
   expect(linkElement).toBeInTheDocument();
 });
 
