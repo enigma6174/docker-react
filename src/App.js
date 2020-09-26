@@ -16,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Built With React. Hosted In NGINX.
         </a>
       </header>
     </div>
